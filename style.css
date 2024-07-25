@@ -1,0 +1,41 @@
+.grid-container {
+    display: grid;
+    gap:    2px;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 80px 100px 100px 100px 100px 100px;
+    background-color: black;
+    margin: auto;
+    width: 406px;
+}
+
+.grid-container > div {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.res {
+    color: white;
+    font-family: monospace;
+    text-align: right;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.C {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.backspace {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.zero{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.sum, .div, .mult, .sub, .equals{
+    background-color: orangered;
+    border: none;
+}
